@@ -53,6 +53,16 @@ details.album-block > summary::marker {
   margin-top: 0.5em;
 }
 
+/* Default diamond */
+.toggle-trigger::before {
+  content: "◇";
+}
+
+/* Diamond becomes ◈ when expanded */
+.album-header.expanded .toggle-trigger::before {
+  content: "◈";
+}
+
 .trackline {
   display: flex;
   align-items: center;
