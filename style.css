@@ -63,6 +63,10 @@ details.album-block > summary::marker {
   content: "◈";
 }
 
+.not-heard     { color: #D3D3D3; }  /* light gray */
+.lightly-heard { color: #FFD700; }  /* yellow */
+.fully-heard   { color: #228B22; }  /* green */
+
 .trackline {
   display: flex;
   align-items: center;
