@@ -7,7 +7,10 @@ document.querySelectorAll('.toggle-trigger').forEach(trigger => {
       const isVisible = tracklist.style.display === 'block';
       tracklist.style.display = isVisible ? 'none' : 'block';
 
-      // Swap diamond symbol
+      // Update header class
+      header.classList.toggle('expanded', !isVisible);
+
+      // Flip the diamond symbol
       trigger.textContent = isVisible ? '◇' : '◈';
     }
   });
