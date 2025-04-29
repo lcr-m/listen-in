@@ -1,0 +1,24 @@
+/* Layout */
+body {
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  background-color: #0F1117;
+  color: #d0d6e1;
+}
+
+pre {
+  font-family: 'Courier New', monospace;
+  line-height: 1.6;
+}
+
+/* Rating Colors */
+.gray     { color: #3F4046; }
+.red      { color: #FF6347; }
+.orange   { color: #FFA500; }
+.yellow   { color: #FFD700; }
+.lime     { color: #9ACD32; }
+.green    { color: #228B22; }
+
+/* Metadata / UI */
+.purple   { color: #C38CC3; }   /* pen */
+.blue     { color: #84c5fb; }   /* titles, track names */
