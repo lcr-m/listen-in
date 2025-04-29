@@ -21,7 +21,7 @@ body {
 /* Reusable spacing classes */
 .gap-sm { display: inline-block; width: 0.5em; }
 .gap-lg { display: inline-block; width: 1em; }
-.gap-xl { display: inline-block; width: 3em; }
+.gap-xl { display: inline-block; width: 2em; }
 
 .trackline {
   display: flex;
