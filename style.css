@@ -19,9 +19,9 @@ body {
 .blue     { color: #84c5fb; }   /* titles, track names */
 
 /* Reusable spacing classes */
-.gap-sm { display: inline-block; width: 1em; }
-.gap-lg { display: inline-block; width: 2em; }
-.gap-xl { display: inline-block; width: 2.1em; }
+.gap1 { display: inline-block; width: 1.5em; }
+.gap2 { display: inline-block; width: 2.75em; }
+.gap3 { display: inline-block; width: 2.1em; }
 
 .trackline {
   display: flex;
