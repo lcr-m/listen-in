@@ -23,6 +23,19 @@ body {
 .gap2 { display: inline-block; width: 2.25em; }
 .gap3 { display: inline-block; width: 2.1em; }
 
+/* Hiding summary */
+details.album-block > summary {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+details.album-block[open] > summary {
+  display: none; /* fully hides it when open */
+}
+
 .trackline {
   display: flex;
   align-items: center;
