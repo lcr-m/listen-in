@@ -44,6 +44,15 @@ details.album-block > summary::marker {
   display: none;
 }
 
+.toggle-trigger {
+  cursor: pointer;
+  user-select: none;
+}
+.tracklist {
+  margin-left: 2em; /* or however much you want the tracklist indented */
+  margin-top: 0.5em;
+}
+
 .trackline {
   display: flex;
   align-items: center;
