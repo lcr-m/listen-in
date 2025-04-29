@@ -22,3 +22,10 @@ body {
 .gap-sm { display: inline-block; width: 3em; }
 .gap-lg { display: inline-block; width: 5em; }
 .gap-xl { display: inline-block; width: 9em; }
+
+.trackline {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  line-height: 1.6;
+}
