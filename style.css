@@ -23,17 +23,25 @@ body {
 .gap2 { display: inline-block; width: 2.25em; }
 .gap3 { display: inline-block; width: 2.1em; }
 
-/* Hiding summary */
+/* Remove arrow and make <summary> inert */
 details.album-block > summary {
   display: block;
   height: 0;
   overflow: hidden;
-  padding: 0;
   margin: 0;
+  padding: 0;
   border: none;
+  pointer-events: none;
 }
-details.album-block[open] > summary {
-  display: none; /* fully hides it when open */
+
+/* Remove arrow in Chromium (Chrome, Opera) */
+details.album-block > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Remove arrow in Firefox */
+details.album-block > summary::marker {
+  display: none;
 }
 
 .trackline {
