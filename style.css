@@ -48,6 +48,14 @@ details.album-block > summary::marker {
   display: none;
 }
 
+.artist-block {
+  border: 1px solid rgba(255, 255, 255, 0.1); /* soft white */
+  border-radius: 6px;
+  padding: 1.5em;
+  margin: 2em 0;
+  background-color: rgba(255, 255, 255, 0.015); /* optional subtle glow */
+}
+
 .toggle-trigger {
   cursor: pointer;
   user-select: none;
