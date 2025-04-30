@@ -60,5 +60,5 @@ details.album-block > summary::marker {
   display: flex;
   align-items: center;
   white-space: nowrap;
-  line-height: 1.6;
+  line-height: 1.2;
 }
