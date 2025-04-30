@@ -121,3 +121,33 @@ details.album-block > summary::marker {
 .score-9::after   { content: " □";                  color: var(--gray); }
 
 .score-10::before { content: "□ □ □ □ □ □ □ □ □ □";color: var(--green); }
+
+.artist-inner {
+  display: flex;
+  gap: 2em;
+}
+
+.artist-sidebar {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.artist-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 6px;
+  object-fit: contain;
+  padding: 1em;
+  background-color: rgba(255,255,255,0.02); /* subtle frame */
+}
+
+.artist-meta {
+  margin-top: 1em;
+  font-size: 0.85em;
+  color: var(--gray);
+  text-align: center;
+}
