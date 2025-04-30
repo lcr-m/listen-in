@@ -82,7 +82,7 @@ details.album-block > summary::marker {
 
 .artist-image img {
   width: 100%;
-  max-width: 500px;
+  max-width: 250px;
   height: auto;
   object-fit: contain;
   padding: 1em;
