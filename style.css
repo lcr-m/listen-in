@@ -18,6 +18,10 @@ body {
 .purple   { color: #C38CC3; }   /* pen */
 .blue     { color: #84c5fb; }   /* titles, track names */
 
+.not-heard     { color: #D3D3D3; }  /* light gray */
+.lightly-heard { color: #FFD700; }  /* yellow */
+.fully-heard   { color: #228B22; }  /* green */
+
 /* Reusable spacing classes */
 .gap1 { display: inline-block; width: 1em; }
 .gap2 { display: inline-block; width: 2.25em; }
@@ -51,10 +55,6 @@ details.album-block > summary::marker {
 .tracklist {
   margin-left: 2.5em; /* or however much you want the tracklist indented */
 }
-
-.not-heard     { color: #D3D3D3; }  /* light gray */
-.lightly-heard { color: #FFD700; }  /* yellow */
-.fully-heard   { color: #228B22; }  /* green */
 
 .trackline {
   display: flex;
