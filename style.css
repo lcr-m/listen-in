@@ -86,7 +86,7 @@ details.album-block > summary::marker {
   font-family: "Courier Prime", monospace;
   font-size: inherit;
   white-space: pre;
-  letter-spacing: 0.1em; /* Adjust for visual balance */
+  letter-spacing: 0.05em; /* Adjust for visual balance */
 }
 
 /* Full manual score-to-color mapping (0–10) */
