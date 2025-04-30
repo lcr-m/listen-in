@@ -94,30 +94,30 @@ details.album-block > summary::marker {
 .score-0::before  { content: "□ □ □ □ □ □ □ □ □ □"; color: var(--gray); }
 
 .score-1::before  { content: "□";                  color: var(--red);   }
-.score-1::after   { content: "□ □ □ □ □ □ □ □ □";  color: var(--gray); }
+.score-1::after   { content: " □ □ □ □ □ □ □ □ □";  color: var(--gray); }
 
 .score-2::before  { content: "□ □";                color: var(--red);   }
-.score-2::after   { content: "□ □ □ □ □ □ □ □";    color: var(--gray); }
+.score-2::after   { content: " □ □ □ □ □ □ □ □";    color: var(--gray); }
 
 .score-3::before  { content: "□ □ □";              color: var(--red);   }
-.score-3::after   { content: "□ □ □ □ □ □ □";      color: var(--gray); }
+.score-3::after   { content: " □ □ □ □ □ □ □";      color: var(--gray); }
 
 .score-4::before  { content: "□ □ □ □";            color: var(--orange);}
-.score-4::after   { content: "□ □ □ □ □ □";        color: var(--gray); }
+.score-4::after   { content: " □ □ □ □ □ □";        color: var(--gray); }
 
 .score-5::before  { content: "□ □ □ □ □";          color: var(--orange);}
-.score-5::after   { content: "□ □ □ □ □";          color: var(--gray); }
+.score-5::after   { content: " □ □ □ □ □";          color: var(--gray); }
 
 .score-6::before  { content: "□ □ □ □ □ □";        color: var(--yellow);}
-.score-6::after   { content: "□ □ □ □";            color: var(--gray); }
+.score-6::after   { content: " □ □ □ □";            color: var(--gray); }
 
 .score-7::before  { content: "□ □ □ □ □ □ □";      color: var(--lime);  }
-.score-7::after   { content: "□ □ □";              color: var(--gray); }
+.score-7::after   { content: " □ □ □";              color: var(--gray); }
 
 .score-8::before  { content: "□ □ □ □ □ □ □ □";    color: var(--lime);  }
-.score-8::after   { content: "□ □";                color: var(--gray); }
+.score-8::after   { content: " □ □";                color: var(--gray); }
 
 .score-9::before  { content: "□ □ □ □ □ □ □ □ □";  color: var(--green); }
-.score-9::after   { content: "□";                  color: var(--gray); }
+.score-9::after   { content: " □";                  color: var(--gray); }
 
 .score-10::before { content: "□ □ □ □ □ □ □ □ □ □";color: var(--green); }
