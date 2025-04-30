@@ -71,3 +71,53 @@ details.album-block > summary::marker {
   white-space: nowrap;
   line-height: 1.2;
 }
+
+:root {
+  --gray: #3F4046;
+  --red: #FF6347;
+  --orange: #FFA500;
+  --yellow: #FFD700;
+  --lime: #9ACD32;
+  --green: #228B22;
+}
+
+/* Base style */
+[class^="score-"] {
+  font-family: "Courier Prime", monospace;
+  font-size: inherit;
+  white-space: pre;
+  letter-spacing: 0.1em; /* Adjust for visual balance */
+}
+
+/* Full manual score-to-color mapping (0–10) */
+
+.score-0::before  { content: "□ □ □ □ □ □ □ □ □ □"; color: var(--gray); }
+
+.score-1::before  { content: "□";                  color: var(--red);   }
+.score-1::after   { content: "□ □ □ □ □ □ □ □ □";  color: var(--gray); }
+
+.score-2::before  { content: "□ □";                color: var(--red);   }
+.score-2::after   { content: "□ □ □ □ □ □ □ □";    color: var(--gray); }
+
+.score-3::before  { content: "□ □ □";              color: var(--red);   }
+.score-3::after   { content: "□ □ □ □ □ □ □";      color: var(--gray); }
+
+.score-4::before  { content: "□ □ □ □";            color: var(--orange);}
+.score-4::after   { content: "□ □ □ □ □ □";        color: var(--gray); }
+
+.score-5::before  { content: "□ □ □ □ □";          color: var(--orange);}
+.score-5::after   { content: "□ □ □ □ □";          color: var(--gray); }
+
+.score-6::before  { content: "□ □ □ □ □ □";        color: var(--yellow);}
+.score-6::after   { content: "□ □ □ □";            color: var(--gray); }
+
+.score-7::before  { content: "□ □ □ □ □ □ □";      color: var(--lime);  }
+.score-7::after   { content: "□ □ □";              color: var(--gray); }
+
+.score-8::before  { content: "□ □ □ □ □ □ □ □";    color: var(--lime);  }
+.score-8::after   { content: "□ □";                color: var(--gray); }
+
+.score-9::before  { content: "□ □ □ □ □ □ □ □ □";  color: var(--green); }
+.score-9::after   { content: "□";                  color: var(--gray); }
+
+.score-10::before { content: "□ □ □ □ □ □ □ □ □ □";color: var(--green); }
