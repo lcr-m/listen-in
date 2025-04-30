@@ -49,7 +49,7 @@ details.album-block > summary::marker {
   user-select: none;
 }
 .tracklist {
-  margin-left: 2em; /* or however much you want the tracklist indented */
+  margin-left: 3em; /* or however much you want the tracklist indented */
 }
 
 .not-heard     { color: #D3D3D3; }  /* light gray */
