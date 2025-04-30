@@ -26,6 +26,7 @@ body {
 .gap1 { display: inline-block; width: 1em; }
 .gap2 { display: inline-block; width: 2.25em; }
 .gap3 { display: inline-block; width: 2.1em; }
+.gap4 { display: inline-block; width: 1.2em; }
 
 /* Remove arrow and make <summary> inert */
 details.album-block > summary {
