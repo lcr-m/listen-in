@@ -103,6 +103,11 @@ details.album-block > summary::marker {
 }
 .tracklist {
   margin-left: 2.35em; /* or however much you want the tracklist indented */
+  display: none;
+}
+
+.album-block.expanded .tracklist {
+  display: block;
 }
 
 .trackline {
