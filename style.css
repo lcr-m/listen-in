@@ -53,7 +53,7 @@ details.album-block > summary::marker {
   user-select: none;
 }
 .tracklist {
-  margin-left: 2.25em; /* or however much you want the tracklist indented */
+  margin-left: 2.1em; /* or however much you want the tracklist indented */
 }
 
 .trackline {
