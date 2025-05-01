@@ -110,6 +110,10 @@ details.album-block > summary::marker {
   display: block;
 }
 
+.album-block.expanded:not(:last-of-type) .tracklist {
+  margin-bottom: 3em; /* or 2em if you want tighter spacing */
+}
+
 .trackline {
   display: flex;
   align-items: center;
