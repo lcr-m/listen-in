@@ -127,10 +127,18 @@ details.album-block > summary::marker {
 }
 
 .artist-meta {
-  margin-top: 1em;
-  font-size: 0.9em;
-  color: white; /* set back to white */
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.artist-date {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  font-size: 0.8em;
+  color: var(--light-gray);
 }
 
 .artist-extras {
