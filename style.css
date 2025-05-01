@@ -112,6 +112,22 @@ details.album-block > summary::marker {
   border-radius: 4px;
 }
 
+.artist-tier {
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0.5em auto 0 auto; /* top, right/left auto-centers, no bottom */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Courier Prime', monospace;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.05); /* subtle background */
+  border: 1px solid var(--blue); /* or choose color per tier later */
+  border-radius: 4px;
+  color: var(--blue);
+  font-size: 0.9em;
+}
+
 .artist-meta {
   margin-top: 1em;
   font-size: 0.9em;
