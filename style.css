@@ -50,7 +50,7 @@ details.album-block > summary::marker {
 }
 
 .album-block.expanded {
-  margin-bottom: 3em;
+  margin-bottom: 1.5em;
 }
 
 .artist-block {
