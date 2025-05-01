@@ -114,6 +114,12 @@ details.album-block > summary::marker {
   display: block;
 }
 
+.artist-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
 .trackline {
   display: flex;
   align-items: center;
