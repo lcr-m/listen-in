@@ -49,6 +49,10 @@ details.album-block > summary::marker {
   display: none;
 }
 
+.album-block.expanded + .album-block {
+  margin-top: 3em;
+}
+
 .artist-block {
   margin: 4em auto;
   max-width: 1200px;
