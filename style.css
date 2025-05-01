@@ -115,7 +115,7 @@ details.album-block > summary::marker {
 .artist-tier {
   width: 1.5em;
   height: 1.5em;
-  margin: 0.5em auto 0 auto; /* top, right/left auto-centers, no bottom */
+  margin: 1em auto 0 auto; /* Increased margin-top for more space */
   display: flex;
   justify-content: center;
   align-items: center;
