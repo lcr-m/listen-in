@@ -62,30 +62,29 @@ details.album-block > summary::marker {
 }
 
 .artist-title {
-  max-width: 100%;
   width: 100%;
+  max-width: 100%;
   text-align: center;
   font-size: 1.5em;
   font-weight: bold;
   font-family: 'Courier Prime', monospace;
   color: var(--blue);
-  margin-bottom: 1em;
+  margin: 0 auto 1em auto;
   padding-bottom: 0.5em;
   border-bottom: 1px solid #555;
 }
 
 .artist-inner {
   display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 3em;
-  justify-content: space-between;
+  grid-template-columns: 250px 1fr 250px;
+  gap: 2em;
+  padding: 0 2em; /* push inward from both sides */
   align-items: start;
 }
 
 .left-box,
 .right-box {
-  display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .artist-sidebar {
@@ -138,8 +137,13 @@ details.album-block > summary::marker {
 .artist-content {
   display: flex;
   flex-direction: column;
+  align-items: stretch;
+}
+
+.album-header {
+  min-height: 2.5em; /* consistent height for all album headers */
+  display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 
 .toggle-trigger {
