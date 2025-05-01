@@ -101,8 +101,8 @@ details.album-block > summary::marker {
   cursor: pointer;
   user-select: none;
 }
-.tracklist {
-  margin-left: 2.35em; /* or however much you want the tracklist indented */
+
+.album-block .tracklist {
   display: none;
 }
 
