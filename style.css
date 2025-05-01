@@ -113,43 +113,17 @@ details.album-block > summary::marker {
 }
 
 .artist-tier {
-  width: 2.2em;
-  height: 2.7em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  font-size: 1.1em;
+  display: inline-block;
+  padding: 0.3em 0.6em;
+  font-size: 1.2em;
   font-family: 'Courier Prime', monospace;
+  color: white;
+  background-color: rgba(255, 215, 0, 0.08); /* subtle gold fill */
+  border: 2px solid #FFD700; /* strong gold outline */
   border-radius: 8px;
-  margin: 0.75em auto 0.25em;
-  background-color: rgba(255, 255, 255, 0.02); /* faint neutral fallback */
-  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-}
-
-/* Tier-specific variants */
-.tier-s {
-  background-color: rgba(231, 76, 60, 0.08);
-  border: 1.5px solid #e74c3c;
-  color: black;
-}
-
-.tier-a {
-  background-color: rgba(230, 126, 34, 0.08);
-  border: 1.5px solid #e67e22;
-  color: black;
-}
-
-.tier-b {
-  background-color: rgba(241, 196, 15, 0.08);
-  border: 1.5px solid #f1c40f;
-  color: black;
-}
-
-.tier-c {
-  background-color: rgba(46, 204, 113, 0.08);
-  border: 1.5px solid #2ecc71;
-  color: black;
+  text-align: center;
+  margin: 0.6em auto 0.3em auto; /* adjust spacing */
+  box-shadow: 0 0 6px rgba(255, 215, 0, 0.3); /* optional soft glow */
 }
 
 .artist-meta {
