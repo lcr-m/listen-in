@@ -68,15 +68,24 @@ details.album-block > summary::marker {
   font-family: 'Courier Prime', monospace;
   color: var(--blue);
   margin-bottom: 1em;
-  border-bottom: 1px solid #555;
   padding-bottom: 0.5em;
+  border-bottom: 1px solid #555;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .artist-inner {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 1fr auto 1fr;
   gap: 2em;
   align-items: start;
+}
+
+.left-box,
+.right-box {
+  display: flex;
+  justify-content: center;
 }
 
 .artist-sidebar {
@@ -148,7 +157,7 @@ details.album-block > summary::marker {
 .album-block {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start; /* was center */
 }
 
 .artist-wrapper {
