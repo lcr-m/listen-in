@@ -65,9 +65,9 @@ details.album-block > summary::marker {
   width: 100%;
   max-width: 100%;
   text-align: center;
-  font-size: 1.5em;
-  font-weight: bold;
-  font-family: 'Courier Prime', monospace;
+  font-size: 1.8em; /* slightly larger to suit the typeface */
+  font-weight: normal; /* Fell English looks best non-bold */
+  font-family: 'IM Fell English', serif;
   color: var(--blue);
   margin: 0 auto 1em auto;
   padding-bottom: 0.5em;
