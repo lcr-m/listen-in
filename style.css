@@ -49,8 +49,8 @@ details.album-block > summary::marker {
   display: none;
 }
 
-.album-block.expanded + .album-block {
-  margin-top: 3em;
+.album-block.expanded {
+  margin-bottom: 3em;
 }
 
 .artist-block {
