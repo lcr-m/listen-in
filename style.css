@@ -54,7 +54,7 @@ details.album-block > summary::marker {
 }
 
 .artist-block {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2em;
   border: 1px solid #333;
@@ -74,13 +74,13 @@ details.album-block > summary::marker {
 
 .artist-inner {
   display: grid;
-  grid-template-columns: 250px 1fr 250px;
+  grid-template-columns: auto 1fr auto;
   gap: 2em;
   align-items: start;
 }
 
 .artist-sidebar {
-  width: 500px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,12 +112,12 @@ details.album-block > summary::marker {
 }
 
 .artist-extras {
+  width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 2em;
-  color: #ccc;
-  font-size: 0.9em;
+  align-items: flex-end;
 }
 
 .artist-blurb, .artist-faves {
