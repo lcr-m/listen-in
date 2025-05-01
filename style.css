@@ -76,7 +76,7 @@ details.album-block > summary::marker {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   gap: 2em;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .artist-sidebar {
