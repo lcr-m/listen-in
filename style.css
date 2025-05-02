@@ -86,6 +86,13 @@ details.album-block > summary::marker {
   line-height: 1.2;
 }
 
+.artist-caption::before {
+  content: "❝ ";
+}
+.artist-caption::after {
+  content: " ❞";
+}
+
 .artist-inner {
   display: grid;
   grid-template-columns: 250px 1fr 250px;
