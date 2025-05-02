@@ -74,6 +74,18 @@ details.album-block > summary::marker {
   border-bottom: 1px solid #555;
 }
 
+.artist-caption {
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  font-size: 0.75em;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6); /* faint, ghostly */
+  margin-top: 0.5em;
+  margin-bottom: 0.3em;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+}
+
 .artist-inner {
   display: grid;
   grid-template-columns: 250px 1fr 250px;
