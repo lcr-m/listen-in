@@ -284,9 +284,8 @@ details.album-block > summary::marker {
 .album-gutter {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* right-align stars and diamond */
+  align-items: flex-end;
   justify-content: center;
-  min-width: 4.5em; /* fixes its width for vertical alignment across albums */
   line-height: 1.2;
 }
 
@@ -305,10 +304,10 @@ details.album-block > summary::marker {
 }
 
 .album-line {
-  display: flex;
+  display: grid;
+  grid-template-columns: 6.5em auto;
   align-items: center;
-  justify-content: center; /* This keeps the whole line centered */
-  column-gap: 1em;
+  gap: 1em;
 }
 
 .album-title {
@@ -354,8 +353,8 @@ details.album-block > summary::marker {
 .album-info {
   display: flex;
   align-items: baseline;
-  gap: 0.5em;
   flex-wrap: wrap;
+  gap: 0.5em;
 }
 
 .album-title {
