@@ -87,11 +87,21 @@ details.album-block > summary::marker {
   line-height: 1.2;
 }
 
-.artist-caption::before {
-  content: "❝ ";
+.image-caption-hover {
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  font-size: 0.75em;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  margin-top: 0.4em;
+  pointer-events: none;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.15)
 }
-.artist-caption::after {
-  content: " ❞";
+
+.artist-image:hover .image-caption-hover {
+  opacity: 1;
 }
 
 .artist-inner {
