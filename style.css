@@ -88,20 +88,26 @@ details.album-block > summary::marker {
 }
 
 .image-caption-hover {
+  margin-top: 0.4em;
+  padding: 0.3em 0.8em;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
   font-family: 'IM Fell English', serif;
   font-style: italic;
   font-size: 0.75em;
+  color: rgba(255, 255, 255, 0.75);
   text-align: center;
-  color: rgba(255, 255, 255, 0.7);
+  max-width: 90%;
   opacity: 0;
+  visibility: hidden;
   transition: opacity 0.3s ease;
-  margin-top: 0.4em;
   pointer-events: none;
-  text-shadow: 0 0 4px rgba(255, 255, 255, 0.15)
 }
 
 .artist-image:hover .image-caption-hover {
   opacity: 1;
+  visibility: visible;
 }
 
 .artist-inner {
@@ -125,11 +131,11 @@ details.album-block > summary::marker {
 }
 
 .artist-image {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0;
-  margin: 0;
+  margin-bottom: 1.2em; /* consistent spacing to tier block */
 }
 
 .artist-image img {
@@ -140,7 +146,7 @@ details.album-block > summary::marker {
   padding: 1em;
   background-color: rgba(255, 255, 255, 0.02);
   border-radius: 4px;
-  box-shadow: 0 20px 30px rgba(255, 255, 255, 0.03);
+  box-shadow: 0 12px 18px rgba(255, 255, 255, 0.03);
 }
 
 .artist-meta-bottom {
