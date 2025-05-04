@@ -284,29 +284,31 @@ details.album-block > summary::marker {
 .album-gutter {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* aligns stars rightward in the gutter */
+  align-items: flex-end; /* right-align stars and diamond */
   justify-content: center;
-  min-width: 4em; /* consistent gutter space */
-  margin-right: 0.75em;
+  min-width: 4.5em; /* fixes its width for vertical alignment across albums */
+  line-height: 1.2;
+}
+
+.album-gutter .toggle-trigger {
+  font-size: 1em;
+  line-height: 1;
+  color: #00cc66;
+}
+
+.album-gutter .rating {
+  font-family: 'Courier Prime', monospace;
+  font-size: 1em;
+  line-height: 1;
+  margin-top: 0.15em;
+  color: #fff;
 }
 
 .album-line {
   display: flex;
   align-items: center;
-}
-
-.album-line .toggle-trigger {
-  font-size: 1em;
-  line-height: 1;
-  color: #00cc66; /* or your existing green */
-}
-
-.album-line .rating {
-  font-family: 'Courier Prime', monospace;
-  font-size: 1em;
-  line-height: 1;
-  color: #fff;
-  margin-top: 0.05em; /* subtle centering tweak */
+  justify-content: center; /* This keeps the whole line centered */
+  column-gap: 1em;
 }
 
 .album-title {
