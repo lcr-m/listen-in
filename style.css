@@ -281,11 +281,18 @@ details.album-block > summary::marker {
   align-items: stretch;
 }
 
+.album-gutter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* aligns stars rightward in the gutter */
+  justify-content: center;
+  min-width: 4em; /* consistent gutter space */
+  margin-right: 0.75em;
+}
+
 .album-line {
   display: flex;
   align-items: center;
-  gap: 0.6em;
-  flex-wrap: wrap; /* optional: allows wrapping on narrow screens */
 }
 
 .album-line .toggle-trigger {
@@ -302,17 +309,16 @@ details.album-block > summary::marker {
   margin-top: 0.05em; /* subtle centering tweak */
 }
 
-.album-line .album-title {
+.album-title {
   font-family: 'IM Fell English', serif;
   font-weight: bold;
   font-size: 1em;
   color: #84c5fb;
 }
 
-.album-line .year {
+.year {
   font-size: 0.75em;
   color: rgba(255, 255, 255, 0.6);
-  margin-left: 0.5em;
 }
 
 .album-header {
@@ -345,19 +351,16 @@ details.album-block > summary::marker {
 
 .album-info {
   display: flex;
-  flex-direction: row;
-  gap: 0.5em;
   align-items: baseline;
+  gap: 0.5em;
+  flex-wrap: wrap;
 }
 
 .album-title {
   font-family: 'IM Fell English', serif;
   font-weight: bold;
-  font-style: normal;
   font-size: 1em;
-  letter-spacing: 0.03em;
-  line-height: 1.2;
-  text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.1); /* optional emboss effect */
+  color: #84c5fb;
 }
 
 .toggle-trigger {
