@@ -323,7 +323,6 @@ details.album-block > summary::marker {
   font-size: 1em;
   letter-spacing: 0.03em;
   line-height: 1.2;
-  color: inherit;
   text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.1); /* optional emboss effect */
 }
 
