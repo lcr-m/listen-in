@@ -175,38 +175,64 @@ details.album-block > summary::marker {
 }
 
 .artist-tier {
-  display: inline-flex;              /* stable flex container */
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 0.25em 0.6em;
+  padding: 0 0.6em;
+  height: 40px;
   font-size: 1em;
   font-family: 'Courier Prime', monospace;
-  color: #ffe599;
-  background-color: rgba(255, 165, 0, 0.08);
-  border: 2px solid #ffb400;
-  border-radius: 6px;
-  height: 1.8em;
   letter-spacing: 0.15em;
-
-  box-shadow:
-    0 0 8px rgba(255, 140, 0, 0.35),
-    0 0 20px rgba(255, 215, 0, 0.08);
-
-  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  line-height: 1;
+  border-radius: 6px;
+  border: 2px solid;
+  background-color: rgba(255, 165, 0, 0.08);
+  transition: box-shadow 0.25s ease;
 }
 
-.artist-tier:hover {
+/* 1 Star — Yellow */
+.stars-1 {
+  border-color: #f7e255;
+  color: #fff8b0;
+  box-shadow: 0 0 6px rgba(255, 255, 100, 0.3);
+}
+
+/* 2 Stars — Orange */
+.stars-2 {
+  border-color: #ffa500;
+  color: #ffe8c0;
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.4);
+}
+
+/* 3 Stars — Red */
+.stars-3 {
+  border-color: #ff5c5c;
+  color: #ffd2d2;
+  box-shadow: 0 0 12px rgba(255, 50, 50, 0.5);
+}
+
+.stars-3:hover {
   box-shadow:
-    0 0 10px rgba(255, 160, 0, 0.45),
-    0 0 24px rgba(255, 215, 0, 0.12);
+    0 0 14px rgba(255, 60, 60, 0.5),
+    0 0 24px rgba(255, 50, 50, 0.25);
+}
+
+.stars-2:hover {
+  box-shadow:
+    0 0 12px rgba(255, 165, 0, 0.45),
+    0 0 20px rgba(255, 165, 0, 0.2);
+}
+
+.stars-1:hover {
+  box-shadow:
+    0 0 10px rgba(255, 255, 100, 0.35),
+    0 0 18px rgba(255, 255, 140, 0.15);
 }
 
 .tier-stars {
-  color: #ffe599; /* ember-gold */
   text-shadow:
     0 0 3px rgba(255, 200, 100, 0.4),
-    0 0 6px rgba(255, 80, 50, 0.2); /* faint ember red */
-  letter-spacing: 0.15em;
+    0 0 6px rgba(255, 80, 50, 0.2);
   line-height: 1;
 }
 
