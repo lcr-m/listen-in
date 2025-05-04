@@ -281,6 +281,40 @@ details.album-block > summary::marker {
   align-items: stretch;
 }
 
+.album-line {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  flex-wrap: wrap; /* optional: allows wrapping on narrow screens */
+}
+
+.album-line .toggle-trigger {
+  font-size: 1em;
+  line-height: 1;
+  color: #00cc66; /* or your existing green */
+}
+
+.album-line .rating {
+  font-family: 'Courier Prime', monospace;
+  font-size: 1em;
+  line-height: 1;
+  color: #fff;
+  margin-top: 0.05em; /* subtle centering tweak */
+}
+
+.album-line .album-title {
+  font-family: 'IM Fell English', serif;
+  font-weight: bold;
+  font-size: 1em;
+  color: #84c5fb;
+}
+
+.album-line .year {
+  font-size: 0.75em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-left: 0.5em;
+}
+
 .album-header {
   display: flex;
   align-items: baseline;
