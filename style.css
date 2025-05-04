@@ -79,9 +79,8 @@ details.album-block > summary::marker {
   font-style: italic;
   font-size: 0.75em;
   text-align: center;
-  color: rgba(255, 255, 255, 0.6); /* faint, ghostly */
+  color: rgba(255, 255, 255, 0.6);
   margin-top: 0.5em;
-  margin-bottom: 0.3em;
   letter-spacing: 0.03em;
   line-height: 1.2;
 }
@@ -131,17 +130,24 @@ details.album-block > summary::marker {
   border-radius: 4px;
 }
 
+.artist-meta-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75em;
+  margin-bottom: 0.4em;
+}
+
 .artist-tier {
   display: inline-block;
   padding: 0.25em 0.5em;
   font-size: 1.1em;
   font-family: 'Courier Prime', monospace;
   color: white;
-  background-color: rgba(255, 215, 0, 0.08); /* subtle gold fill */
-  border: 2px solid #FFD700; /* strong gold outline */
+  background-color: rgba(255, 215, 0, 0.08);
+  border: 2px solid #FFD700;
   border-radius: 8px;
   text-align: center;
-  margin: 0.6em auto 0.3em auto; /* adjust spacing */
   box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
 }
 
@@ -153,11 +159,10 @@ details.album-block > summary::marker {
 }
 
 .artist-date {
-  display: flex;
-  align-items: center;
-  gap: 0.3em;
   font-size: 0.8em;
-  color: var(--light-gray);
+  color: #888; /* softer than main body */
+  font-family: 'Courier Prime', monospace;
+  letter-spacing: 0.05em;
 }
 
 .artist-extras {
