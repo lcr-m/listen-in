@@ -88,21 +88,38 @@ details.album-block > summary::marker {
 }
 
 .image-caption-hover {
-  margin-top: 0.4em;
-  padding: 0.3em 0.8em;
+  max-height: 3.6em; /* roughly 2.5 lines */
+  overflow-y: auto;
+  text-overflow: ellipsis;
+  white-space: normal;
+
+  padding: 0.4em 0.8em;
   background-color: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 4px;
+
   font-family: 'IM Fell English', serif;
   font-style: italic;
   font-size: 0.75em;
+  line-height: 1.2;
   color: rgba(255, 255, 255, 0.75);
   text-align: center;
+
   max-width: 90%;
+  margin-top: 0.4em;
+
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
   pointer-events: none;
+}
+
+.image-caption-hover::-webkit-scrollbar {
+  display: none;
+}
+
+.image-caption-hover {
+  scrollbar-width: none; /* Firefox */
 }
 
 .artist-image:hover .image-caption-hover {
