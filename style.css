@@ -200,9 +200,11 @@ details.album-block > summary::marker {
 
 /* 2 Stars — Orange */
 .stars-2 {
-  border-color: #ffa500;
-  color: #ffe8c0;
-  box-shadow: 0 0 10px rgba(255, 165, 0, 0.4);
+  border-color: #ff9900;
+  color: #ffe2b0;
+  box-shadow:
+    0 0 5px rgba(255, 165, 0, 0.2),
+    0 0 10px rgba(255, 140, 0, 0.08);
 }
 
 /* 3 Stars — Red */
