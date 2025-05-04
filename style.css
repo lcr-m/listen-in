@@ -297,6 +297,18 @@ details.album-block > summary::marker {
   text-align: right;
 }
 
+.album-meta span.rating {
+  display: inline-block;
+  font-size: 0.95em;
+  line-height: 1;
+  vertical-align: middle;
+  transform: translateY(-1px); /* nudges it up */
+}
+
+.album-meta .toggle-trigger {
+  vertical-align: middle;
+}
+
 .album-info {
   display: flex;
   flex-direction: row;
