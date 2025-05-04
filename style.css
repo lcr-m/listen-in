@@ -130,25 +130,27 @@ details.album-block > summary::marker {
   border-radius: 4px;
 }
 
-.artist-meta-top {
+.artist-meta-bottom {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 0.75em;
-  margin-bottom: 0.4em;
+  margin-top: 0.6em;
+  gap: 0.25em; /* tight gap between badge and date */
 }
 
 .artist-tier {
   display: inline-block;
-  padding: 0.25em 0.5em;
-  font-size: 1.1em;
+  padding: 0.2em 0.6em;
+  font-size: 1em;
   font-family: 'Courier Prime', monospace;
-  color: white;
-  background-color: rgba(255, 215, 0, 0.08);
-  border: 2px solid #FFD700;
-  border-radius: 8px;
+  color: #fff;
+  background-color: rgba(255, 215, 0, 0.06); /* a touch subtler */
+  border: 1.5px solid #FFD700;              /* lighter frame */
+  border-radius: 6px;
   text-align: center;
-  box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+  box-shadow: 0 0 4px rgba(255, 215, 0, 0.3); /* softer glow */
+  letter-spacing: 0.05em;
+  margin: 0; /* prevent vertical drift */
 }
 
 .artist-meta {
@@ -160,7 +162,7 @@ details.album-block > summary::marker {
 
 .artist-date {
   font-size: 0.8em;
-  color: #888; /* softer than main body */
+  color: rgba(255, 255, 255, 0.5);
   font-family: 'Courier Prime', monospace;
   letter-spacing: 0.05em;
 }
