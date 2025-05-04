@@ -82,7 +82,7 @@ details.album-block > summary::marker {
   color: rgba(255, 255, 255, 0.6);
   margin-top: 0.8em;               /* increased breathing room */
   padding-top: 0.4em;              /* spacing after border */
-  border-top: 0.5px solid rgba(255, 255, 255, 0.07); /* faint border line */
+  border-top: 1px solid rgba(255, 255, 255, 0.12); /* faint border line */
   letter-spacing: 0.03em;
   line-height: 1.2;
 }
@@ -130,6 +130,7 @@ details.album-block > summary::marker {
   padding: 1em;
   background-color: rgba(255, 255, 255, 0.02);
   border-radius: 4px;
+  box-shadow: 0 20px 30px rgba(255, 255, 255, 0.03);
 }
 
 .artist-meta-bottom {
