@@ -80,7 +80,9 @@ details.album-block > summary::marker {
   font-size: 0.75em;
   text-align: center;
   color: rgba(255, 255, 255, 0.6);
-  margin-top: 0.5em;
+  margin-top: 0.8em;               /* increased breathing room */
+  padding-top: 0.4em;              /* spacing after border */
+  border-top: 0.5px solid rgba(255, 255, 255, 0.07); /* faint border line */
   letter-spacing: 0.03em;
   line-height: 1.2;
 }
