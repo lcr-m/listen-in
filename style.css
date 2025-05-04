@@ -282,9 +282,37 @@ details.album-block > summary::marker {
 }
 
 .album-header {
-  min-height: 2.5em; /* consistent height for all album headers */
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  gap: 1em;
+  margin-bottom: 0.4em;
+}
+
+.album-meta {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  justify-content: flex-end;
+  min-width: 6em; /* ensures consistent glyph/star alignment */
+  text-align: right;
+}
+
+.album-info {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  align-items: baseline;
+}
+
+.album-title {
+  font-family: 'IM Fell English', serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1em;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  color: inherit;
+  text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.1); /* optional emboss effect */
 }
 
 .toggle-trigger {
