@@ -1,13 +1,13 @@
 document.querySelectorAll('.toggle-trigger').forEach(trigger => {
   trigger.addEventListener('click', () => {
-    const albumBlock = trigger.closest('.album-block');
+    const albumBlock = trigger.closest('.album-row'); // changed from .album-block
     const tracklist = albumBlock.querySelector('.tracklist');
 
     if (tracklist) {
       const isVisible = tracklist.style.display === 'block';
       tracklist.style.display = isVisible ? 'none' : 'block';
 
-      // Update album-block class
+      // Toggle class for styling if needed
       albumBlock.classList.toggle('expanded', !isVisible);
 
       // Flip the diamond symbol
