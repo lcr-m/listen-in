@@ -282,19 +282,17 @@ details.album-block > summary::marker {
 }
 
 .album-gutter {
-  width: 6.5em; /* fixed width ensures diamonds + stars are aligned */
-  text-align: right;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 0.4em;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.25em;
 }
 
 .album-line {
-  display: grid;
-  grid-template-columns: 6.5em 1fr;
-  align-items: center;
-  margin-bottom: 0.8em;
+  display: flex;
+  gap: 0.5em;
+  align-items: baseline;
 }
 
 .album-title {
@@ -302,19 +300,26 @@ details.album-block > summary::marker {
   font-weight: bold;
   font-size: 1em;
   color: #84c5fb;
+  white-space: nowrap;
+}
+
+.album-row {
+  display: grid;
+  grid-template-columns: 6.5em 1fr;
+  column-gap: 1.2em;
+  align-items: center;
+  margin-bottom: 1.5em;
 }
 
 .year {
   color: rgba(255, 255, 255, 0.6);
+  white-space: nowrap;
 }
 
 .album-info {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1;
-  gap: 0.5em;
+  flex-direction: column;
+  gap: 0.25em;
 }
 
 .toggle-trigger {
