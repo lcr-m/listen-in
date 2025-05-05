@@ -327,21 +327,12 @@ details.album-block > summary::marker {
   user-select: none;
 }
 
-.album-block .tracklist {
+.tracklist {
   display: none;
 }
 
-.album-block.expanded .tracklist {
+.album-row.expanded .tracklist {
   display: block;
-}
-
-.album-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 400px; /* adjust to 500px if you prefer a wider column */
-  margin: 0 auto 2em auto; /* centers block + adds spacing between albums */
 }
 
 .artist-wrapper {
