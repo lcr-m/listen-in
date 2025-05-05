@@ -291,10 +291,9 @@ details.album-block > summary::marker {
 }
 
 .album-line {
-  display: flex;
+  display: grid;
+  grid-template-columns: 6.5em 1fr;
   align-items: center;
-  justify-content: center;
-  gap: 1.25em;
   margin-bottom: 0.8em;
 }
 
@@ -316,14 +315,6 @@ details.album-block > summary::marker {
   justify-content: center;
   flex-grow: 1;
   gap: 0.5em;
-  text-align: left;
-}
-
-.album-title {
-  font-family: 'IM Fell English', serif;
-  font-weight: bold;
-  font-size: 1em;
-  color: #84c5fb;
 }
 
 .toggle-trigger {
