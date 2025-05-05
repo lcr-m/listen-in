@@ -283,31 +283,28 @@ details.album-block > summary::marker {
 
 .album-gutter {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  line-height: 1.2;
-}
-
-.album-gutter .toggle-trigger {
-  font-size: 1em;
-  line-height: 1;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5em;
   color: #00cc66;
 }
 
-.album-gutter .rating {
-  font-family: 'Courier Prime', monospace;
-  font-size: 1em;
-  line-height: 1;
-  margin-top: 0.15em;
-  color: #fff;
+.album-main {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  text-align: center;
 }
 
 .album-line {
   display: grid;
   grid-template-columns: 6.5em auto;
   align-items: center;
-  gap: 1em;
+  justify-content: center;
+  margin-bottom: 0.8em;
 }
 
 .album-title {
@@ -318,15 +315,7 @@ details.album-block > summary::marker {
 }
 
 .year {
-  font-size: 0.75em;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.album-header {
-  display: flex;
-  align-items: baseline;
-  gap: 1em;
-  margin-bottom: 0.4em;
 }
 
 .album-meta {
