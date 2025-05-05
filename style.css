@@ -287,7 +287,6 @@ details.album-block > summary::marker {
   justify-content: flex-end;
   align-items: center;
   gap: 0.5em;
-  color: #00cc66;
 }
 
 .album-main {
