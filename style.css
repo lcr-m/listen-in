@@ -282,27 +282,19 @@ details.album-block > summary::marker {
 }
 
 .album-gutter {
+  width: 6.5em; /* fixed width ensures diamonds + stars are aligned */
+  text-align: right;
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  gap: 0.5em;
-}
-
-.album-main {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 0.5em;
-  text-align: center;
+  gap: 0.4em;
 }
 
 .album-line {
-  display: grid;
-  grid-template-columns: 6.5em auto;
+  display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1.25em;
   margin-bottom: 0.8em;
 }
 
@@ -317,32 +309,14 @@ details.album-block > summary::marker {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.album-meta {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5em;
-  justify-content: flex-end;
-  min-width: 6em; /* ensures consistent glyph/star alignment */
-  text-align: right;
-}
-
-.album-meta span.rating {
-  display: inline-block;
-  font-size: 0.95em;
-  line-height: 1;
-  vertical-align: middle;
-  transform: translateY(-1px); /* nudges it up */
-}
-
-.album-meta .toggle-trigger {
-  vertical-align: middle;
-}
-
 .album-info {
   display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
   gap: 0.5em;
+  text-align: left;
 }
 
 .album-title {
