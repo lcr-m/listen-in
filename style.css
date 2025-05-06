@@ -277,6 +277,7 @@ details.album-block > summary::marker {
 .artist-content {
   display: flex;
   flex-direction: column;
+  align-items: center; /* centers child content */
 }
 
 .rating {
@@ -303,8 +304,9 @@ details.album-block > summary::marker {
 }
 
 .album-section {
-  max-width: 1200px; /* slightly narrower */
-  margin: 0 auto 0 7.5em; /* nudge left */
+  max-width: 700px;     /* or however wide you want your album content */
+  width: 100%;
+  margin: 0 auto;
 }
 
 .album-line {
@@ -315,7 +317,6 @@ details.album-block > summary::marker {
 
 .album-title {
   font-family: 'IM Fell English', serif;
-  font-weight: bold;
   font-size: 1em;
   color: #84c5fb;
   white-space: nowrap;
