@@ -289,6 +289,12 @@ details.album-block > summary::marker {
   text-align: center;
 }
 
+.album-section {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .album-line {
   display: flex;
   gap: 0.5em;
