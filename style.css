@@ -296,6 +296,13 @@ details.album-block > summary::marker {
   text-align: center;
 }
 
+.album-diamond {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .album-section {
   max-width: 1200px;
   margin-left: auto;
@@ -318,9 +325,9 @@ details.album-block > summary::marker {
 
 .album-row {
   display: grid;
-  grid-template-columns: 6.5em 1fr;
-  column-gap: 1.2em;
-  align-items: flex-start;
+  grid-template-columns: 6em 1fr 3em; /* stars | info | diamond */
+  column-gap: 1.5em;
+  align-items: start;
   margin-bottom: 1.5em;
 }
 
