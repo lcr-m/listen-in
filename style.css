@@ -282,7 +282,7 @@ details.album-block > summary::marker {
 
 .rating {
   font-family: 'Courier Prime', monospace;
-  font-size: 1.15em; /* adjust this value as needed */
+  font-size: 1.05em; /* adjust this value as needed */
   letter-spacing: 0.15em;
   line-height: 1;
 }
