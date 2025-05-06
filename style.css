@@ -282,13 +282,9 @@ details.album-block > summary::marker {
 
 .rating {
   font-family: 'Courier Prime', monospace;
-  font-size: 1.2em; /* adjust this value as needed */
+  font-size: 1.15em; /* adjust this value as needed */
   letter-spacing: 0.15em;
   line-height: 1;
-  color: #fff8dc; /* or your preferred ember/gold tone */
-  text-shadow:
-    0 0 2px rgba(255, 240, 200, 0.3),
-    0 0 5px rgba(255, 160, 80, 0.2);
 }
 
 .album-gutter {
