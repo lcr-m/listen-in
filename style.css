@@ -278,7 +278,7 @@ details.album-block > summary::marker {
 .artist-content {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
 }
 
 .album-gutter {
@@ -286,7 +286,7 @@ details.album-block > summary::marker {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 0.25em;
+  gap: 0.15em;
   text-align: center;
 }
 
@@ -320,6 +320,7 @@ details.album-block > summary::marker {
 .album-info {
   align-items: center;
   text-align: center;
+  justify-self: center;
 }
 
 .toggle-trigger {
