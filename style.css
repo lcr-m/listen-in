@@ -340,7 +340,7 @@ details.album-block > summary::marker {
   flex-direction: column;
   align-items: center;        /* centers title + tracklist */
   justify-content: flex-start;
-  width: max-content;         /* shrink-wraps to fit content */
+  width: 100%;         /* shrink-wraps to fit content */
   margin-left: auto;
   margin-right: auto;         /* centers within its grid column */
   text-align: center;
