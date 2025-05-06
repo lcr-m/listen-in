@@ -285,7 +285,7 @@ details.album-block > summary::marker {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.25em;
   text-align: center;
 }
@@ -308,7 +308,7 @@ details.album-block > summary::marker {
   display: grid;
   grid-template-columns: 6.5em 1fr;
   column-gap: 1.2em;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 1.5em;
 }
 
