@@ -305,7 +305,7 @@ details.album-block > summary::marker {
 
 .album-section {
   max-width: 1200px; /* slightly narrower */
-  margin: 0 auto 0 5em; /* nudge left */
+  margin: 0 auto 0 8em; /* nudge left */
 }
 
 .album-line {
